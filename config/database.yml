@@ -23,6 +23,10 @@ default: &default
 
 development:
   <<: *default
+  username: postgres
+  password: postgres
+  host: db
+
   database: code_with_rails_alpine_js_development
 
   # The specified database role being used to connect to postgres.
@@ -57,6 +61,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  username: postgres
+  password: postgres
+  host: db
+
   database: code_with_rails_alpine_js_test
 
 # As with config/credentials.yml, you never want to store sensitive information,

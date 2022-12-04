@@ -1,24 +1,25 @@
-# README
+# Code With Rails - Alpine.js Demo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## DESCRIPTION
 
-Things you may want to cover:
+This project is the demo app which accompanies the blog post at https://codewithrails.com/alpine-js.
 
-* Ruby version
+## USAGE
 
-* System dependencies
+To run the app, ensure you have Docker and docker-compose installed.
 
-* Configuration
+Run `docker-compose up` and go to http://localhost:3000.
 
-* Database creation
+To enter the development environment, run `docker-compose run app bash`. From within this bash shell, you can run generators, rake tasks, etc.
 
-* Database initialization
+## RESOURCES
 
-* How to run the test suite
+* [Alpine.js](https://alpinejs.dev)
 
-* Services (job queues, cache servers, search engines, etc.)
+## ABOUT
 
-* Deployment instructions
+Interested in Ruby on Rails? Code With Rails is a technical blog featuring articles and tutorials on Rails development, deployment, and scaling.
 
-* ...
+Visit us at https://codewithrails.com.
+
+(c) Copyright 2022 Code With Rails

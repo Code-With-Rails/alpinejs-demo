@@ -1,6 +1,6 @@
-Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+# frozen_string_literal: true
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+Rails.application.routes.draw do
+  resource :modal, controller: 'modal', only: %i[new create]
+  root to: 'home#index'
 end

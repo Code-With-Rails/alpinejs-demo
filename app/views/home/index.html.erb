@@ -1,0 +1,8 @@
+<p>Alpine.js & Rails Demo</p>
+
+<div>
+  <p>Modal Example</p>
+  <%= link_to 'Open Modal link', new_modal_path %>
+  <%= button_to 'Open Modal', new_modal_path, params: { format: :turbo_stream }, method: :get %>
+  <%= turbo_frame_tag 'modal-placeholder' %>
+</div>

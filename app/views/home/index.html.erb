@@ -1,8 +1,13 @@
-<p>Alpine.js & Rails Demo</p>
+<h1 class="text-xl font-bold">Alpine.js & Rails Demo</h1>
 
-<div>
-  <p>Modal Example</p>
-  <%= link_to 'Open Modal link', new_modal_path %>
+<div id="modal-example">
+  <h2 class="text-lg font-bold">Modal Example</h2>
   <%= button_to 'Open Modal', new_modal_path, params: { format: :turbo_stream }, method: :get %>
   <%= turbo_frame_tag 'modal-placeholder' %>
+</div>
+
+<div id="sliding-sidebar-example"></div>
+
+<div id="tooltip-example">
+  <h2 class="text-lg font-bold">Tooltip Example</h2>
 </div>

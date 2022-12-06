@@ -11,7 +11,8 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body x-data="{ isModalOpen: false }"
+        @keydown.window.escape="isModalOpen = false;">
     <main class="container mx-auto my-5 px-5 space-y-5">
       <%= yield %>
     </main>

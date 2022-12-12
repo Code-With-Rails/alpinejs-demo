@@ -1,0 +1,7 @@
+<%= turbo_frame_tag 'flash' do %>
+  <% unless flash[:notice].blank? %>
+    <div x-init="() => { flashShown = true; setTimeout(() => { flashShown = false }, 4000) };">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+<% end %>

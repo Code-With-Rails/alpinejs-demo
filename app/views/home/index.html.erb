@@ -1,13 +1,23 @@
 <h1 class="text-xl font-bold">Alpine.js & Rails Demo</h1>
 
-<div id="modal-example">
-  <h2 class="text-lg font-bold">Modal Example</h2>
-  <%= button_to 'Open Modal', new_modal_path, params: { format: :turbo_stream }, method: :get %>
-  <%= turbo_frame_tag 'modal-placeholder' %>
-</div>
+<div class="flex flex-col space-y-5">
+  <div id="flash-message-example" class="border rounded p-4">
+    <h2 class="text-lg font-bold">Flash Message Example</h2>
+    <div class="flex flex-col space-y-5">
+      <%=
+        render partial: 'flash_message/form',
+               locals: { form_type: :html }
+      %>
+      <%=
+        render partial: 'flash_message/form',
+               locals: { form_type: :turbo_stream }
+      %>
+    </div>
+  </div>
 
-<div id="sliding-sidebar-example"></div>
-
-<div id="tooltip-example">
-  <h2 class="text-lg font-bold">Tooltip Example</h2>
+  <div id="modal-example" class="border rounded p-4">
+    <h2 class="text-lg font-bold">Modal Example</h2>
+    <%= button_to 'Open Modal', new_modal_path, params: { format: :turbo_stream }, method: :get, class: 'inline-flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto sm:text-sm' %>
+    <%= turbo_frame_tag 'modal-placeholder' %>
+  </div>
 </div>

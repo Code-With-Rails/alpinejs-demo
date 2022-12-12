@@ -1,0 +1,14 @@
+<div class="fixed inset-0 flex items-center justify-center px-4 py-6 pointer-events-none sm:p-6 sm:items-start sm:justify-center z-50"
+     x-data="{ flashShown: false }"
+     x-show="flashShown"
+     x-cloak
+     x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave="transition ease-out duration-200"
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0">
+  <div class="max-w-xs w-full bg-slate-900 p-4 text-slate-100 font-bold text-center shadow-lg pointer-events-auto rounded-md shadow-xs overflow-hidden">
+    <%= render 'layouts/flash_message' %>
+  </div>
+</div>

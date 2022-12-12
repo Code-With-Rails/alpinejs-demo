@@ -1,0 +1,2 @@
+<%= turbo_stream.replace 'flash', partial: 'layouts/flash_message' %>
+<%= turbo_stream.update 'flash-message-form', partial: 'flash_message/form', locals: { form_type: :turbo_stream } %>

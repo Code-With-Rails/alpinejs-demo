@@ -1,8 +1,11 @@
+![qVcM1jSux](https://user-images.githubusercontent.com/16937/207222261-d40b5405-3be6-4335-b3b3-8a34f6731df6.jpg)
+
+
 # Code With Rails - Alpine.js Demo App
 
 ## DESCRIPTION
 
-This project is the demo app which accompanies the blog post at https://codewithrails.com/alpine-js.
+This project is the demo app which accompanies the blog post at https://codewithrails.com/alpinejs.
 
 ## USAGE
 

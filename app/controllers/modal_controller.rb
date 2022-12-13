@@ -2,7 +2,7 @@
 
 class ModalController < ApplicationController
   def new
-    @user = User.new(name: SecureRandom.hex(5))
+    @user = User.new
     respond_to do |format|
       format.turbo_stream
     end
